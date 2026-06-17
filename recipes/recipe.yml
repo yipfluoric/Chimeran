@@ -30,7 +30,6 @@ modules:
         - starship
         - niri
         - xwayland-satellite 
-        - scroll
         - helium
         - noctalia-git
         - noctalia-greeter
