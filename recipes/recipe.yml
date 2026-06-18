@@ -37,6 +37,7 @@ modules:
         - scroll
         - qt6ct
         - qt5ct
+        - klassy
         - btop
         - ueberzugpp
         - xwayland-satellite 
