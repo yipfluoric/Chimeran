@@ -30,15 +30,12 @@ modules:
     install:
       packages:
         - greetd
-        - nix
         - micro
         - starship
         - niri
         - scroll
         - qt6ct
-        - qt5ct
         - klassy
-        - darkly
         - btop
         - ueberzugpp
         - xwayland-satellite 
@@ -69,7 +66,6 @@ modules:
     system:
       enabled:
         - greetd.service
-        - nix-daemon.service
 
   ### could use this, currently dont want to.
   # - type: default-flatpaks
