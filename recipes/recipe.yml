@@ -16,11 +16,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  
-  - type: systemd
-    system:
-      enabled:
-        - greetd.service
 
   - type: dnf
     repos:
@@ -35,6 +30,8 @@ modules:
         
     install:
       packages:
+        - greetd
+        - nix
         - micro
         - starship
         - niri
@@ -69,6 +66,12 @@ modules:
         - firefox
         - firefox-langpacks
 
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
+        - nix-daemon.service
+        
   ### could use this, currently dont want to.
   # - type: default-flatpaks
   #   configurations:
