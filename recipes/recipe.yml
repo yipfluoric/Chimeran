@@ -16,6 +16,11 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
 
   - type: dnf
     repos:
@@ -26,6 +31,7 @@ modules:
         - atim/starship
         - lionheartp/Hyprland
         - v8v88v8v88/helium
+        - wezfurlong/wezterm-nightly
         
     install:
       packages:
@@ -33,12 +39,20 @@ modules:
         - starship
         - niri
         - scroll
+        - qt6ct
+        - qt5ct
+        - btop
+        - wezterm-nightly
         - xwayland-satellite 
         - helium
         - noctalia-git
         - noctalia-greeter
+        - kde-partitionmanager
+        - papirus-icon-theme
+        - geistmono-nerd-fonts
       
       exclude:
+        - alacritty
         - waybar
         - fuzzel
 
@@ -46,10 +60,16 @@ modules:
       packages:
         - plasma-desktop
         - plasma-login-manager
+        - plasma-systemmonitor
+        - plasma-systemsettings
+        - kde-connect
+        - gnome-disk-utility
+        - kate
         - konsole
         - firefox
         - firefox-langpacks
 
+  ### could use this, currently dont want to.
   # - type: default-flatpaks
   #   configurations:
   #     - notify: true
