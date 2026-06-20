@@ -24,8 +24,7 @@ modules:
           - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
       copr:
         - atim/starship
-        - avengemedia/danklinux
-        - avengemedia/dms-git
+        - lionheartp/Hyprland
         - v8v88v8v88/helium
         
     install:
@@ -35,7 +34,6 @@ modules:
         - starship
         - niri
         - scroll
-        - miracle-wm
         - adw-gtk3-theme
         - xdg-desktop-portal-wlr
         - qt6ct
@@ -45,20 +43,16 @@ modules:
         - ueberzugpp
         - xwayland-satellite 
         - helium
-        - quickshell-git
-        - dms
-        - dms-greeter
+        - noctalia
+        - noctalia-greeter
         - dgop
         - dsearch
         - papirus-icon-theme
         - geistmono-nerd-fonts 
+        - system76-scheduler
       exclude:
         - waybar
         - fuzzel
-        ### git variation has more features but noctalia-qs was somehow pulled? 
-        ### was this cause i didn't rebase or is it in a repo? destroy both right now just incase.
-        - quickshell
-        - noctalia-qs
 
     remove:
       packages:
@@ -74,13 +68,10 @@ modules:
         - firefox-langpacks
         
   - type: systemd
-    user:
-      enable:
-        - dsearch
-        - vicinae
     system:
       enabled:
         - greetd
+        - system76-scheduler
 
   ### could use this, currently dont want to.
   # - type: default-flatpaks
