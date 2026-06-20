@@ -49,7 +49,6 @@ modules:
         - papirus-icon-theme
         - geistmono-nerd-fonts 
         - system76-scheduler
-        - python-pywalfox
         - firefox
         - firefox-langpacks
 
