@@ -1,38 +1,33 @@
-# chimeran &nbsp; [![bluebuild build badge](https://github.com/yipfluoric/chimeran/actions/workflows/build.yml/badge.svg)](https://github.com/yipfluoric/chimeran/actions/workflows/build.yml)
+<p align="center"><img src="https://github.com/yipfluoric/chimeran/blob/main/assets/chimeran-logo.png?raw=true">
+[![trans rights](https://pride-badges.pony.workers.dev/static/v1?label=trans%20rights&stripeWidth=6&stripeColors=5BCEFA,F5A9B8,FFFFFF,F5A9B8,5BCEFA)](https://en.wikipedia.org/wiki/Transgender_rights_movement) [![plurality friendly](https://pride-badges.pony.workers.dev/static/v1?label=plurality+friendly&labelColor=%23555&stripeWidth=6&stripeColors=2d0625%2C553375%2C7674c2%2C8ac7b0%2Cf4eebe)](https://en.wikipedia.org/wiki/Transgender_rights_movement) [![bluebuild build badge](https://github.com/yipfluoric/chimeran/actions/workflows/build.yml/badge.svg)](https://github.com/yipfluoric/chimeran/actions/workflows/build.yml)
+</p>
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+<div align="center"> 
 
-After setup, it is recommended you update this README to describe your custom image.
 
 ## Installation
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+There are two ways to install Chimeran. First, is to install either Fedora Atomic, or preferably Bazzite, and then rebase. Another option is if you are already on either and want a fresh install, you can build an iso as described below.
 
-To rebase an existing atomic Fedora installation to the latest build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+## Rebasing
+To rebase an existing Fedora Atomic/Bazzite install:
+
+- First, rebase to the unsigned image, for proper signing keys and policies installed and then reboot:
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/yipfluoric/chimeran:latest
-  ```
-- Reboot to complete the rebase:
-  ```
   systemctl reboot
   ```
-- Then rebase to the signed image, like so:
+- Then rebase to the signed image, and then reboot again to complete rebasing:
   ```
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/yipfluoric/chimeran:latest
-  ```
-- Reboot again to complete the installation
-  ```
   systemctl reboot
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+The `latest` tag is what is recommended as it aligns with current base Bazzite Version. There is also two other options for Nvidia users, `chimeran-nvidia` (10 series and under) and `chimeran-nvidia-open` (20 series and over).
 
 ## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/how-to/generate-iso/#_top). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+When on Fedora Atomic or Bazzite, you can generate an offline ISO with the instructions available [here](https://blue-build.org/how-to/generate-iso/#_top). These isos are far too big to distribute on github, and among that are potential security risks. This can change in the future but as of the moment, I do not plan to add isos to the github, seperate service, etc. If doing this method, I *highly* encourage you to build it even if this repo later has isos
 
 ## Verification
 
@@ -41,3 +36,4 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/yipfluoric/chimeran
 ```
+</div></h1>
