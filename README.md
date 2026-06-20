@@ -1,8 +1,7 @@
 <p align="center"><img src="https://github.com/yipfluoric/chimeran/blob/main/assets/chimeran-logo.png?raw=true">
-[![trans rights](https://pride-badges.pony.workers.dev/static/v1?label=trans%20rights&stripeWidth=6&stripeColors=5BCEFA,F5A9B8,FFFFFF,F5A9B8,5BCEFA)](https://en.wikipedia.org/wiki/Transgender_rights_movement) [![plurality friendly](https://pride-badges.pony.workers.dev/static/v1?label=plurality+friendly&labelColor=%23555&stripeWidth=6&stripeColors=2d0625%2C553375%2C7674c2%2C8ac7b0%2Cf4eebe)](https://en.wikipedia.org/wiki/Transgender_rights_movement) [![bluebuild build badge](https://github.com/yipfluoric/chimeran/actions/workflows/build.yml/badge.svg)](https://github.com/yipfluoric/chimeran/actions/workflows/build.yml)
+<img src="https://pride-badges.pony.workers.dev/static/v1?label=trans%20rights&stripeWidth=6&stripeColors=5BCEFA,F5A9B8,FFFFFF,F5A9B8,5BCEFA"> <img src="https://pride-badges.pony.workers.dev/static/v1?label=plurality+friendly&labelColor=%23555&stripeWidth=6&stripeColors=2d0625%2C553375%2C7674c2%2C8ac7b0%2Cf4eebe">
+<img src="https://github.com/yipfluoric/chimeran/actions/workflows/build.yml/badge.svg">
 </p>
-
-<div align="center"> 
 
 
 ## Installation
