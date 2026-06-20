@@ -49,6 +49,10 @@ modules:
         - papirus-icon-theme
         - geistmono-nerd-fonts 
         - system76-scheduler
+        - python-pywalfox
+        - firefox
+        - firefox-langpacks
+
       exclude:
         - waybar
 
@@ -62,8 +66,6 @@ modules:
         - gnome-disk-utility
         - kate
         - konsole
-        - firefox
-        - firefox-langpacks
         
   - type: systemd
     system:
