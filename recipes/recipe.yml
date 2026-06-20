@@ -36,6 +36,7 @@ modules:
         - niri
         - scroll
         - miracle-wm
+        - adw-gtk3-theme
         - xdg-desktop-portal-wlr
         - qt6ct
         - klassy
