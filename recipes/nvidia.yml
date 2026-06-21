@@ -18,7 +18,6 @@ modules:
     system:
       enabled:
         - greetd
-        - ananicy-cpp
         - scx
     user:
       enabled:

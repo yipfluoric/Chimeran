@@ -34,7 +34,6 @@ modules:
         - firefox-langpacks
         - ScopeBuddy
         - gamescope
-        - ananicy-cpp
         - scx-scheds-nightly
         - scx-tools-nightly
 
