@@ -32,8 +32,9 @@ cursor {
 
 environment {
     XDG_CURRENT_DESKTOP "niri"
-    QT_QPA_PLATFORMTHEME "kde"
+    QT_QPA_PLATFORMTHEME "gtk3"
 }
+
 layout {
     gaps 8
     tab-indicator {
