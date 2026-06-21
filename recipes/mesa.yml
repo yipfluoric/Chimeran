@@ -16,3 +16,17 @@ modules:
   - from-file: ./common/flatpak.yml
   - from-file: ./common/services.yml
   - type: signing
+  - type: systemd
+    system:
+      enabled:
+        - greetd
+        - ananicy-cpp
+        - scx
+    user:
+      enabled:
+        - elephant
+
+    type: files
+    files:
+      - source: system
+        destination: /
