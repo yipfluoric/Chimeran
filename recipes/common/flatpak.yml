@@ -1,6 +1,7 @@
-- type: default-flatpaks
-  system:
-    install:
-        - io.github.kolunmi.Bazaar
-        - org.gimp.GIMP
-        - org.gnome.Firmware
+modules:
+  - type: default-flatpaks
+    system:
+      install:
+          - io.github.kolunmi.Bazaar
+          - org.gimp.GIMP
+          - org.gnome.Firmware
