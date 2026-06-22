@@ -8,7 +8,7 @@ modules:
       files:
         add:
           - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-      
+
     install:
       packages:
         - greetd
@@ -22,28 +22,52 @@ modules:
         - adw-gtk3-theme
         - xdg-desktop-portal-wlr
         - ueberzugpp
-        - xwayland-satellite 
+        - xwayland-satellite
         - helium
         - walker
         - elephant
         - papirus-icon-theme
-        - geistmono-nerd-fonts 
+        - geistmono-nerd-fonts
         - firefox
         - firefox-langpacks
         - ScopeBuddy
         - gamescope
         - scx-scheds-nightly
         - scx-tools-nightly
-        ### because bluebuild doesnt want to pull from other repos for noctalia :<
+        - tuned
+        - tuned-ppd
+        - fastfetch
+        - hyfetch
+
+        ### Noctalia dependencies, because it install purely from the lionheartP repo and not much else
         - dejavu-sans-fonts
         - libqalculate
         - jemalloc
         - wlroots
-        - cage
         - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
           packages:
             - noctalia-git
             - noctalia-greeter
-          
+
       exclude:
         - waybar
+
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
+
+  - type: default-flatpaks
+    configurations:
+      - scope: user
+        repo:
+          title: Flathub (user)
+      - notify: true
+        scope: system
+        repo:
+          title: Flathub (system)
+        install:
+          - io.github.kolunmi.Bazaar
+          - com.github.tchx84.Flatseal
+          - io.github.flattool.Warehouse
+          - org.gnome.Firmware
+          - io.github.dvlv.boxbuddyrs

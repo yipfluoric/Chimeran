@@ -1,0 +1,12 @@
+modules:
+  - type: systemd
+    system:
+      enabled:
+        - greetd
+        - tuned
+        - tuned-ppd
+
+  - type: files
+    files:
+      - source: system
+        destination: /
