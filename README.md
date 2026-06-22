@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/yipfluoric/chimeran/blob/main/system/usr/share/plymouth/themes/spinner/watermark.png?raw=true"> 
+<p align="center"><img src="https://github.com/yipfluoric/chimeran/blob/main/assets/chimeran-logo.png?raw=true"> 
 <h4><p align="center"> a Fedora-based bootc image with Niri, Scroll, & Noctalia v5. </p></h4>
 <h6><p align="center">Note: this is mostly a personal image for me. I cannot guarantee it will work 100% for you, apologies in advance. </p></h6>
 <p align="center"><img src="https://pride-badges.pony.workers.dev/static/v1?label=trans%20rights&stripeWidth=6&stripeColors=5BCEFA,F5A9B8,FFFFFF,F5A9B8,5BCEFA"> <img src="https://pride-badges.pony.workers.dev/static/v1?label=plurality+friendly&labelColor=%23555&stripeWidth=6&stripeColors=2d0625%2C553375%2C7674c2%2C8ac7b0%2Cf4eebe">
