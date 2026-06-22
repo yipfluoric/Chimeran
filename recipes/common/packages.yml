@@ -34,6 +34,7 @@ modules:
         - firefox-langpacks
         - ScopeBuddy
         - gamescope
+        - steam
         - scx-scheds-nightly
         - scx-tools-nightly
         - tuned
